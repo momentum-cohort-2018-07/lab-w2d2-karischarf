@@ -7,22 +7,22 @@ function sum(numbers) {
 
   for (var i = 0; i < numbers.length; i++) {
     total += numbers[i]
+  }
+  return total
 }
-    return total 
-}
-                       
-      
+
+
 
 // 2. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
 function average(numbers) {
   var sum = 0;
   for (var i = 0; i < numbers.length; i++) {
-    sum += numbers[i] 
+    sum += numbers[i]
   }
-    if (numbers.length <= 0) {
+  if (numbers.length <= 0) {
     return undefined;
-    }
+  }
   return sum / numbers.length;
 }
 
@@ -30,24 +30,22 @@ function average(numbers) {
 // returns a new array that contains the elements found in both arrays.
 // The order they are in does not matter, but no duplicates should be
 // in the returned array, even if they were in the input.
-function intersection (array1,array2) {
-   var dupes = []
-
-for (var num1 of array1) {
-  for (var num2 of array2) {
+function intersection(array1, array2) {
+  var dupes = []
+  for (var num1 of array1) {
+    for (var num2 of array2) {
+      if (num1 === num2) {
+        dupes.push(num1)
+      }
+    }
   }
-   if (num1 === num2 dupes.push(num1) {
-    return  
-   }
+  return dupes
 }
-  
-
-
-  
 
 
 // 4. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
+
 
 // 5. There are many techniques to sort arrays in programming. Your programming
 // language will likely include the ability to do this. We are going to
